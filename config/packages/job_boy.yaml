@@ -1,3 +1,11 @@
+parameters:
+  env(JOBBOY_REDIS_HOST): ''
+
 job_boy:
-  process_repository: JobBoy\Process\Domain\Repository\Infrastructure\Doctrine\ProcessRepository
+#  process_repository: JobBoy\Process\Domain\Repository\Infrastructure\Doctrine\ProcessRepository
+  process_repository: JobBoy\Process\Domain\Repository\Infrastructure\Redis\ProcessRepository
+
 #  process_class: JobBoy\Process\Domain\Entity\Infrastructure\TouchCallback\HydratableProcess
+
+  redis:
+    host: '%env(resolve:JOBBOY_REDIS_HOST)%'
