@@ -3,15 +3,18 @@
     "license": "proprietary",
     "require": {
         "php": "^7.1.3",
+        "ext-json": "*",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "dansan/jobboy": "dev-exp/bundle",
+        "dansan/jobboy": "dev-exp/event_bus",
+        "dan/working-dir": "0.0.*@dev",
         "symfony/console": "4.3.*",
         "symfony/dotenv": "4.3.*",
         "symfony/flex": "^1.3.1",
         "symfony/framework-bundle": "4.3.*",
         "symfony/orm-pack": "^1.0",
-        "symfony/yaml": "4.3.*"
+        "symfony/yaml": "4.3.*",
+        "fzaninotto/faker": "^1.7"
     },
     "require-dev": {
     },
@@ -64,6 +67,10 @@
         {
             "type": "vcs",
             "url": "git@bitbucket.org:danielsan-team/jobboy.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:danielsan-team/working-dir.git"
         }
     ]
 }

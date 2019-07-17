@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true      # Automatically injects dependencies in your services.
+    autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+
+  jobboy.create_data_file.working_dir:
+    class: Dan\WorkingDir\WorkingDir
+    arguments:
+      - "%kernel.project_dir%/var/working_dir/create_data_file"
+    lazy: true
