@@ -2,7 +2,7 @@
 
 namespace App\JobBoy\CreateDataFile;
 
-use Dan\WorkingDir\WorkingDirInterface;
+use App\JobBoy\WorkingDir\WorkingDirInterface;
 use JobBoy\Process\Domain\Entity\Id\ProcessId;
 use JobBoy\Process\Domain\ProcessIterator\IterationResponse;
 use JobBoy\Process\Domain\ProcessIterator\ProcessHandlers\UnhandledProcessHandler;

@@ -5,7 +5,7 @@ services:
 
 
   jobboy.create_data_file.working_dir:
-    class: Dan\WorkingDir\WorkingDir
+    class: App\JobBoy\WorkingDir\WorkingDir
     arguments:
       - "%kernel.project_dir%/var/working_dir/create_data_file"
     lazy: true
