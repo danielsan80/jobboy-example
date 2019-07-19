@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "faf566d76a284476764cbd26f50e6824",
+    "content-hash": "1084b0c67dd7f2f7f26c6f53bf0a718f",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -98,11 +98,17 @@
         },
         {
             "name": "dansan/jobboy",
-            "version": "dev-exp/event_bus",
+            "version": "0.0.0",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:danielsan-team/jobboy.git",
-                "reference": "79263d5b59667836c5f95d88e88d0e209a228540"
+                "url": "https://github.com/danielsan80/jobboy.git",
+                "reference": "4a8b77184451117cb8de9fcb383bc68af711b9e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/danielsan80/jobboy/zipball/4a8b77184451117cb8de9fcb383bc68af711b9e8",
+                "reference": "4a8b77184451117cb8de9fcb383bc68af711b9e8",
+                "shasum": ""
             },
             "require": {
                 "beberlei/assert": "^3.0",
@@ -135,13 +141,9 @@
                     "Dan\\": "src/Dan/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "proprietary"
+                "MIT"
             ],
             "authors": [
                 {
@@ -150,7 +152,7 @@
                 }
             ],
             "description": "It's a little jobman... a little job manager",
-            "time": "2019-07-17T16:21:28+00:00"
+            "time": "2019-07-19T14:02:36+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -2575,16 +2577,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.4.4",
+            "version": "v1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "4b5d25a5538e2dc37ff84645fe7498a9a04947b3"
+                "reference": "4467ab35c82edebac58fe58c22cea166a805eb1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/4b5d25a5538e2dc37ff84645fe7498a9a04947b3",
-                "reference": "4b5d25a5538e2dc37ff84645fe7498a9a04947b3",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/4467ab35c82edebac58fe58c22cea166a805eb1f",
+                "reference": "4467ab35c82edebac58fe58c22cea166a805eb1f",
                 "shasum": ""
             },
             "require": {
@@ -2620,7 +2622,7 @@
                 }
             ],
             "description": "Composer plugin for Symfony",
-            "time": "2019-07-12T06:29:25+00:00"
+            "time": "2019-07-19T08:59:18+00:00"
         },
         {
             "name": "symfony/framework-bundle",
@@ -3690,16 +3692,15 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "dansan/jobboy": 20,
         "dan/working-dir": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.1.3",
-        "ext-json": "*",
         "ext-ctype": "*",
-        "ext-iconv": "*"
+        "ext-iconv": "*",
+        "ext-json": "*"
     },
     "platform-dev": []
 }
