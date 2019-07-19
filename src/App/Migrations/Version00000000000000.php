@@ -11,7 +11,7 @@ use JobBoy\Process\Domain\Repository\Infrastructure\Doctrine\ProcessRepository;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 /**
- * Doctrine DBAL Migration of Broadway EventStore (for Symfony)
+ * Doctrine DBAL Migration of JobBoy ProcessRepository (for Symfony)
  *
  * You can prevent the doctrine:migrations:diff command from dropping the table
  * by setting the $tableName parameter in broadway_event_store_dbal.yaml to ...
