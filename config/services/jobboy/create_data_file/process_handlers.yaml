@@ -25,15 +25,6 @@ services:
     tags:
       - name: jobboy.process_handler
 
-
-  App\JobBoy\CreateDataFile\FreeHandled:
-    class: App\JobBoy\CreateDataFile\FreeHandled
-    lazy: true
-    tags:
-      - name: jobboy.process_handler
-
-
-
   App\JobBoy\CreateDataFile\Fail:
     class: App\JobBoy\CreateDataFile\Fail
     lazy: true

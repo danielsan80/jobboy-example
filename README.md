@@ -1,188 +1,53 @@
+# JobBoy Example
 
-# About Symfony
+Questo progetto è un esempio di utilizzo di [JobBoy](https://github.com/danielsan80/jobboy).
 
-Per facilitare l'installazione di Symfony ho aggiunto al Dockerfile l'installazione del symfony-cli e di wget.
-Poi ho lanciato `symfony new my_project --no-git` per poi spostare il contenuto della directory my_project nella root
-del progetto.
+Si tratta di un applicativo Symfony 4 con alcuni [piccoli adattamenti](./doc/notes.md)
+(non rilevanti per utilizzare JobBoy).
 
-Symfony così com'è non mi va bene così faccio in genere le seguenti modifiche:
+In questa applicazione è stato aggiunto il JobBoyBundle ed è stato implementato un job di esempio `create_data_file`.
 
-1- Sposto il contenuto di `services.yaml` in `services_default.yaml`
+Il `create_data_file` crea un file .jsonl contenente n anagrafiche generate con
+[Faker](https://github.com/fzaninotto/Faker).
 
-`cp config/services.yaml config/services_default.yaml`
+Per farlo impiega diverse iterazioni sospendendo il lavoro e salvando lo stato di avanzamento nel Process di JobBoy.
 
-2- Creo la directory `services`
+Per definire un job in JobBoy è necessario sviluppare un set di ProcessHandler (che implementino l'interfaccia
+`ProcessHandlerInterface`) che gestiscano in maniera esclusiva le varie casistiche nelle quali in job si può
+travare.
 
-`mkdir config/services`
+E' possibile tralasciare alcune casistiche e delegarne la gestione a dei ProcessHandler generici
+(con indice di priorità maggiore di 100). 
 
-3- e in `services.yaml` metto solo le import di `service_default.yaml` e `services/`
+> La priority può trarre in inganno: il valore di default è 100, se si vuole registrare un ProcessHandler con
+priorità più bassa sarà necessario impotare la priority ad un valore > 100 (110 ad esempio).  
 
-```
-# config/services.yaml`
+Lo scopo di questo approccio è liberare periodicamente la memoria suddividendo il lavoro in più processi PHP eseguiti
+sequenzialmente.
 
-imports:
-    - { resource: 'services_default.yaml'}
-    - { resource: 'services/'}
-```
+Inoltre la suddivisione del lavoro in più ProcessHandler permette di scalare sul numero di ProcessHandler piuttosto che
+aumentare la complessità del programma che lo descrive.
 
-4- Faccio puntare il namespace `App` a `src/App` anziché a `src`
+I ProcessHandler implementati per il `create_data_file` sono i seguenti:
 
-```
-# config/services_default.yaml`
+- **Initialize**: Eseguito una volta sola prepara la `working_dir` e vi inizializza un file temporaneo nel quale
+verranno scritti i vari record generati salvandosi il path nel `ProcessStore` del `Process`. Inoltre inizializza a zero
+il contatore dei record scritti. Porta il `Process` dallo stato `starting` a `runnning`.
+- **Iterate**: E' il cuore del lavoro, verrà eseguito più volte ed ogni volta genererà un numero limitato di record 
+salvandoli in chunk di alcuni record nel file temporaneo, aggiornando nel `ProcessStore` il contatore incrementale.
+Raggiunto il numero di record da generare porterò il `Process` dallo stato `running` a `ending`
+- **Finalize**: Eseguito una sola volta per spostare il file temporaneo ormai pronto nella posizione finale
+richiesta nei parametri del `Process`. Porta il `Process` dallo stato `ending` a `completed`.
+- **FreeHandled**: E' generico e registrato quindi con una priorità più bassa (110). Il suo scopo è portare nello
+stato `failing` eventuali `Process` rimasti `handled` il che può verificarsi se viene interrotto il worker
+durante un'iterazione.
+- **Fail**: Quando il `Process` è in `failing` questo `ProcessHandler` fa il tear down del lavoro, cancellando il file
+temporaneo, dopo di ché lo porterà in `failed`.   
 
-  ...
 
-  App\:
-    resource: '../src/*'
-    exclude: '../src/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
+I ProcessHandler devono essere registrati nel DIC di Symfony come servizi con il tag `jobboy.process_handler`.
 
-  App\Controller\:
-    resource: '../src/Controller'
-    tags: ['controller.service_arguments']
-    
-  ...
-  
-```
 
-diventa
 
-```
-# config/services_default.yaml`
-
-  ...
-
-  App\:
-    resource: '../src/App/*'
-    exclude: '../src/App/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
-    
-  App\Controller\:
-    resource: '../src/App/Controller'
-    tags: ['controller.service_arguments']
-    
-  ...
-    
-```
-
-5- Modifico di conseguenza le sezioni `autoload` e `autoload-dev` del composer.json
-
-```
-# composer.json
-
-    ...
-
-    "autoload": {
-        "psr-4": {
-            "App\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "App\\Tests\\": "tests/"
-        }
-    },
-    
-    ...
-    
-```
-
-diventa:
-
-```
-# composer.json
-
-    ...
-
-    "autoload": {
-        "psr-4": {
-            "App\\": "src/App/"
-            "Acme\\": "src/Acme/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
-    },
-    
-    ...
-    
-```
-
-6- Sposto quindi il contenuto di `src` in `src/App`
-
-7- Correggo il Kernel di conseguenza
-
-```
-# src/App/Kernel.php
-
-    ...
-
-    public function getProjectDir(): string
-    {
-        return \dirname(__DIR__);
-    }
-    
-    ...
-
-```
-
-diventa
-
-```
-# src/App/Kernel.php
-
-    ...
-
-    public function getProjectDir(): string
-    {
-        return \dirname(\dirname(__DIR__));
-    }
-    
-    ...
-
-```
-
-8- Qualora si dovessero aggiungere delle rotte si creerà la cartella `routes`
-e in tal caso i riferimenti al file system dovranno tener conto della cartella `src/App`.
-
-Ad esempio:
-
-```
-# config/routes/annotations.yaml
-
-controllers:
-    resource: ../../src/App/Controller/
-    type: annotation
-
-```
-
-9- Qualora si usasse Doctrine anche nel suo file di configurazione in `doctrine.orm.mappings.App`
-c'è un riferimento a filesystem da adattare
-
-```
-# config/packages
-
-...
-
-doctrine:
-    
-    ...
-    
-    orm:
-        auto_generate_proxy_classes: true
-        naming_strategy: doctrine.orm.naming_strategy.underscore
-        auto_mapping: true
-        mappings:
-            App:
-                is_bundle: false
-                type: annotation
-                dir: '%kernel.project_dir%/src/App/Entity'
-                prefix: 'App\Entity'
-                alias: App
-
-    ...
-
-```
-
-10- Forse Flex non funzionerà più correttamente e neppure la generazione del codice.
-
+## Resources
+- [Notes](./doc/notes.md)
