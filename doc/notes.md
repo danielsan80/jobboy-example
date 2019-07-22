@@ -191,5 +191,9 @@ doctrine:
 
 ```
 
-10- Forse Flex non funzionerà più correttamente e neppure la generazione del codice.
+10- A differenza di come scritto della doc di Symfony è preferibile mettiamo `.env` sotto .gitignore.
+Aggiungiamo e versioniamo invece il file `.env.dist`.
+La motivazioni sta nelle complicazioni che avremmo con Docker se facessimo alla Symfony way.
+
+11- Forse Flex non funzionerà più correttamente e neppure la generazione del codice.
 

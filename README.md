@@ -1,5 +1,39 @@
 # JobBoy Example
 
+## Getting started
+
+clone and start the project, install the dependencies, then run the tests:
+
+```
+git clone git@github.com:danielsan80/jobboy-example.git <project_dir>
+cd <project_dir>
+./dc up -d
+./dc enter
+cp .env.dist .env
+vim .env
+composer install
+test-all
+```
+
+Now you can start the example process:
+
+```
+sf jobboy:process:start --code create_data_file --parameters=data/create_data_file/parameters.json 
+
+```
+Now the `Process` is saved in the `ProcessRepository` in `starting` status and no one is changing it.
+
+So start the worker to iterate the processes including the new one.
+
+```
+sf jobboy:work
+```
+
+A few seconds later the process will be `completed` and the result
+will be in the file `var/jobs/create_data_file/output.json`
+
+
+## How it works
 Questo progetto è un esempio di utilizzo di [JobBoy](https://github.com/danielsan80/jobboy).
 
 Si tratta di un applicativo Symfony 4 con alcuni [piccoli adattamenti](./doc/notes.md)
