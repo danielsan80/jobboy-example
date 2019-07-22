@@ -3,9 +3,9 @@
     "license": "proprietary",
     "require": {
         "php": "^7.1.3",
+        "ext-json": "*",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "ext-json": "*",
         "dansan/jobboy": "^0.0",
         "fzaninotto/faker": "^1.7",
         "symfony/console": "4.3.*",
@@ -16,10 +16,6 @@
         "symfony/yaml": "4.3.*"
     },
     "require-dev": {
-        "symfony/debug-pack": "*",
-        "symfony/profiler-pack": "*",
-        "symfony/test-pack": "*",
-        "symfony/web-server-bundle": "4.3.*",
         "dansan/fixture-handler": "^0.1",
         "mockery/mockery": "dev-master"
     },
