@@ -4,10 +4,9 @@ namespace App\JobBoy\CreateDataFile;
 
 use JobBoy\Process\Domain\Entity\Id\ProcessId;
 use JobBoy\Process\Domain\ProcessIterator\IterationResponse;
-use JobBoy\Process\Domain\ProcessIterator\ProcessHandlers\UnhandledProcessHandler;
-use JobBoy\Process\Domain\Repository\ProcessRepositoryInterface;
+use JobBoy\Process\Domain\ProcessIterator\ProcessHandlers\Base\AbstractUnhandledProcessHandler;
 
-class Iterate extends UnhandledProcessHandler
+class Iterate extends AbstractUnhandledProcessHandler
 {
 
     const ITERATION_SIZE = 500;

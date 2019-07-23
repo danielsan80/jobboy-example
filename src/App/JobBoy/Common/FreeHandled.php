@@ -4,9 +4,9 @@ namespace App\JobBoy\Common;
 
 use JobBoy\Process\Domain\Entity\Id\ProcessId;
 use JobBoy\Process\Domain\ProcessIterator\IterationResponse;
-use JobBoy\Process\Domain\ProcessIterator\ProcessHandlers\HandledProcessHandler;
+use JobBoy\Process\Domain\ProcessIterator\ProcessHandlers\Base\AbstractHandledProcessHandler;
 
-class FreeHandled extends HandledProcessHandler
+class FreeHandled extends AbstractHandledProcessHandler
 {
 
     protected function doSupports(ProcessId $id): bool

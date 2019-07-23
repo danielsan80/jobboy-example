@@ -4,9 +4,9 @@ namespace App\JobBoy\CreateDataFile;
 
 use JobBoy\Process\Domain\Entity\Id\ProcessId;
 use JobBoy\Process\Domain\ProcessIterator\IterationResponse;
-use JobBoy\Process\Domain\ProcessIterator\ProcessHandlers\UnhandledProcessHandler;
+use JobBoy\Process\Domain\ProcessIterator\ProcessHandlers\Base\AbstractUnhandledProcessHandler;
 
-class Fail extends UnhandledProcessHandler
+class Fail extends AbstractUnhandledProcessHandler
 {
 
     protected function doSupports(ProcessId $id): bool

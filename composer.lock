@@ -63,16 +63,16 @@
         },
         {
             "name": "dansan/jobboy",
-            "version": "0.0.0",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielsan80/jobboy.git",
-                "reference": "4a8b77184451117cb8de9fcb383bc68af711b9e8"
+                "reference": "43acad22dfb9e545f048668d1450dc75dd955f36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielsan80/jobboy/zipball/4a8b77184451117cb8de9fcb383bc68af711b9e8",
-                "reference": "4a8b77184451117cb8de9fcb383bc68af711b9e8",
+                "url": "https://api.github.com/repos/danielsan80/jobboy/zipball/43acad22dfb9e545f048668d1450dc75dd955f36",
+                "reference": "43acad22dfb9e545f048668d1450dc75dd955f36",
                 "shasum": ""
             },
             "require": {
@@ -117,7 +117,7 @@
                 }
             ],
             "description": "It's a little jobman... a little job manager",
-            "time": "2019-07-19T14:02:36+00:00"
+            "time": "2019-07-23T13:13:42+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -3748,12 +3748,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "44a439cc5b0b0bd8a94c9a67dc8801f6cfc9b5b0"
+                "reference": "ffe255a19a1862d3a601ba74925d4f3c15896dfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/44a439cc5b0b0bd8a94c9a67dc8801f6cfc9b5b0",
-                "reference": "44a439cc5b0b0bd8a94c9a67dc8801f6cfc9b5b0",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/ffe255a19a1862d3a601ba74925d4f3c15896dfa",
+                "reference": "ffe255a19a1862d3a601ba74925d4f3c15896dfa",
                 "shasum": ""
             },
             "require": {
@@ -3805,7 +3805,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2019-07-15T19:53:21+00:00"
+            "time": "2019-07-22T18:06:51+00:00"
         },
         {
             "name": "symfony/phpunit-bridge",
