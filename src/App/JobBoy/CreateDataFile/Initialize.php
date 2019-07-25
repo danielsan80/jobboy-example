@@ -4,8 +4,8 @@ namespace App\JobBoy\CreateDataFile;
 
 use App\JobBoy\WorkingDir\WorkingDirInterface;
 use JobBoy\Process\Domain\Entity\Id\ProcessId;
-use JobBoy\Process\Domain\ProcessIterator\IterationResponse;
-use JobBoy\Process\Domain\ProcessIterator\ProcessHandlers\Base\AbstractUnhandledProcessHandler;
+use JobBoy\Process\Domain\ProcessHandler\IterationResponse;
+use JobBoy\Process\Domain\ProcessHandler\ProcessHandlers\Base\AbstractUnhandledProcessHandler;
 use JobBoy\Process\Domain\Repository\ProcessRepositoryInterface;
 
 class Initialize extends AbstractUnhandledProcessHandler

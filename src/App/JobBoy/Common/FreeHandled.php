@@ -3,8 +3,8 @@
 namespace App\JobBoy\Common;
 
 use JobBoy\Process\Domain\Entity\Id\ProcessId;
-use JobBoy\Process\Domain\ProcessIterator\IterationResponse;
-use JobBoy\Process\Domain\ProcessIterator\ProcessHandlers\Base\AbstractHandledProcessHandler;
+use JobBoy\Process\Domain\ProcessHandler\IterationResponse;
+use JobBoy\Process\Domain\ProcessHandler\ProcessHandlers\Base\AbstractHandledProcessHandler;
 
 class FreeHandled extends AbstractHandledProcessHandler
 {

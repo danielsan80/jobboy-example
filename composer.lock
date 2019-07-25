@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b00592b57e3cf80cd4c45a5a26f967c9",
+    "content-hash": "9e8b789785b2ff6017edb38c57dcb2ab",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -63,16 +63,16 @@
         },
         {
             "name": "dansan/jobboy",
-            "version": "0.0.2",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielsan80/jobboy.git",
-                "reference": "43acad22dfb9e545f048668d1450dc75dd955f36"
+                "reference": "77db2c40dad043de96790e4f98036ebf888dcd84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielsan80/jobboy/zipball/43acad22dfb9e545f048668d1450dc75dd955f36",
-                "reference": "43acad22dfb9e545f048668d1450dc75dd955f36",
+                "url": "https://api.github.com/repos/danielsan80/jobboy/zipball/77db2c40dad043de96790e4f98036ebf888dcd84",
+                "reference": "77db2c40dad043de96790e4f98036ebf888dcd84",
                 "shasum": ""
             },
             "require": {
@@ -117,7 +117,7 @@
                 }
             ],
             "description": "It's a little jobman... a little job manager",
-            "time": "2019-07-23T13:13:42+00:00"
+            "time": "2019-07-25T13:57:31+00:00"
         },
         {
             "name": "doctrine/annotations",

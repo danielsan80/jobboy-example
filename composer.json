@@ -6,7 +6,7 @@
         "ext-json": "*",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "dansan/jobboy": "^0.0",
+        "dansan/jobboy": "^0.1",
         "fzaninotto/faker": "^1.7",
         "symfony/console": "4.3.*",
         "symfony/dotenv": "4.3.*",
