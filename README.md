@@ -71,7 +71,7 @@ I ProcessHandler implementati per il `create_data_file` sono i seguenti:
 verranno scritti i vari record generati salvandosi il path nel `ProcessStore` del `Process`. Inoltre inizializza a zero
 il contatore dei record scritti. Porta il `Process` dallo stato `starting` a `runnning`.
 - **Iterate**: E' il cuore del lavoro, verrà eseguito più volte ed ogni volta genererà un numero limitato di record 
-salvandoli in chunk di alcuni record nel file temporaneo, aggiornando di conseguenza nel `ProcessStore` il contatore.
+salvandoli in chunk di alcuni record nel file temporaneo, aggiornando di conseguenza il contatore nel `ProcessStore`.
 Raggiunto il numero di record da generare porterà il `Process` dallo stato `running` a `ending`
 - **Finalize**: Eseguito una sola volta per spostare il file temporaneo ormai pronto nella posizione finale
 richiesta nei parametri del `Process`. Porta il `Process` dallo stato `ending` a `completed`.
@@ -83,6 +83,10 @@ temporaneo, dopo di ché lo porterà in `failed`.
 
 
 I ProcessHandler devono essere registrati nel DIC di Symfony come servizi con il tag `jobboy.process_handler`.
+
+## TO DO
+- Aggiungere un esempio di utilizzo dello StepManager
+- Aggiungere un esempio del ProcessHandler Dummy
 
 
 
