@@ -63,16 +63,16 @@
         },
         {
             "name": "dansan/jobboy",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielsan80/jobboy.git",
-                "reference": "77db2c40dad043de96790e4f98036ebf888dcd84"
+                "reference": "06e4d0877a5e036709ca9e949a4acbe2e21ec530"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielsan80/jobboy/zipball/77db2c40dad043de96790e4f98036ebf888dcd84",
-                "reference": "77db2c40dad043de96790e4f98036ebf888dcd84",
+                "url": "https://api.github.com/repos/danielsan80/jobboy/zipball/06e4d0877a5e036709ca9e949a4acbe2e21ec530",
+                "reference": "06e4d0877a5e036709ca9e949a4acbe2e21ec530",
                 "shasum": ""
             },
             "require": {
@@ -97,7 +97,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.0.x-dev"
+                    "dev-master": "0.1.x-dev"
                 }
             },
             "autoload": {
@@ -117,7 +117,7 @@
                 }
             ],
             "description": "It's a little jobman... a little job manager",
-            "time": "2019-07-25T13:57:31+00:00"
+            "time": "2019-07-26T14:59:14+00:00"
         },
         {
             "name": "doctrine/annotations",

@@ -15,7 +15,7 @@ class TmpWorkingDirTest extends TestCase
     public function use_default_subdir()
     {
 
-        rmdir(sys_get_temp_dir() . TmpWorkingDir::DEFAULT_SUBDIR);
+        @rmdir(sys_get_temp_dir() . TmpWorkingDir::DEFAULT_SUBDIR);
 
         $workingDir = new TmpWorkingDir();
         $this->assertDirectoryNotExists(sys_get_temp_dir() . TmpWorkingDir::DEFAULT_SUBDIR);
@@ -32,8 +32,8 @@ class TmpWorkingDirTest extends TestCase
     public function use_subdir()
     {
 
-        rmdir(sys_get_temp_dir() . '/my/dir');
-        rmdir(sys_get_temp_dir() . '/my');
+        @rmdir(sys_get_temp_dir() . '/my/dir');
+        @rmdir(sys_get_temp_dir() . '/my');
 
         $workingDir = new TmpWorkingDir('/my/dir');
         $this->assertDirectoryNotExists(sys_get_temp_dir() . '/my/dir');
