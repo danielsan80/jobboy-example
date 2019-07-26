@@ -19,7 +19,6 @@ Now you can start the example process:
 
 ```
 sf jobboy:process:start --code create_data_file --parameters=data/create_data_file/parameters.json 
-
 ```
 Now the `Process` is saved in the `ProcessRepository` in `starting` status and no one is changing it.
 
@@ -31,6 +30,41 @@ sf jobboy:work
 
 A few seconds later the process will be `completed` and the result
 will be in the file `var/jobs/create_data_file/output.json`
+
+Obviously the `jobboy:work` command should be added to Cron or Supervisord. An example with Cron:
+```
+//$ crontab -e
+... 
+
+* * * * * /usr/bin/php /var/www/project/bin/console jobboy:work --timeout=300 --idle-time=30 --env=prod
+```  
+
+You can execute the process in a one command too waiting the end of the process (just for debug purpose):
+```
+sf jobboy:process:execute --code create_data_file --parameters=data/create_data_file/parameters.json 
+```
+
+You can remove old processes:
+```
+sf jobboy:process:clear --days 90 
+``` 
+
+You can list all the processes...
+```
+sf jobboy:process:list 
+```
+
+...or only the active ones...
+```
+sf jobboy:process:list --active 
+```
+
+...and you can show the details of one 
+```
+sf jobboy:process:list --show b793c
+```
+
+That's all.
 
 
 ## How it works
