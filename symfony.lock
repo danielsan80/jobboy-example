@@ -1,4 +1,16 @@
 {
+    "dansan/jobboy-bundle": {
+        "version": "0.1.x-dev"
+    },
+    "dansan/jobboy-processes-doctrine": {
+        "version": "0.1.x-dev"
+    },
+    "dansan/jobboy-processes-redis": {
+        "version": "0.1.x-dev"
+    },
+    "symfony/dotenv": {
+        "version": "v4.3.3"
+    },
     "symfony/phpunit-bridge": {
         "version": "4.3",
         "recipe": {
@@ -14,5 +26,8 @@
             "phpunit.xml.dist",
             "tests/.gitignore"
         ]
+    },
+    "symfony/yaml": {
+        "version": "v4.3.3"
     }
 }

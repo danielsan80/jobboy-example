@@ -5,9 +5,10 @@ parameters:
 job_boy:
 #  process_repository: redis
   process_repository: doctrine
+#  process_repository: in_memory
 
 #  process_class: JobBoy\Process\Domain\Entity\Infrastructure\TouchCallback\HydratableProcess
 
-  redis:
-    host: '%env(resolve:JOBBOY_REDIS_HOST)%'
-    port: '%env(resolve:JOBBOY_REDIS_PORT)%'
+#  redis:
+#    host: '%env(resolve:JOBBOY_REDIS_HOST)%'
+#    port: '%env(resolve:JOBBOY_REDIS_PORT)%'

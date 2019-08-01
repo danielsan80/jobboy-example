@@ -6,9 +6,11 @@
         "ext-json": "*",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "dansan/jobboy": "^0.1",
+        "dansan/jobboy-bundle": "dev-bundlize@dev",
+        "dansan/jobboy": "dev-bundlize@dev",
+        "dansan/jobboy-processes-redis": "dev-bundlize@dev",
+        "dansan/jobboy-processes-doctrine": "dev-bundlize@dev",
         "fzaninotto/faker": "^1.7",
-        "symfony/console": "4.3.*",
         "symfony/dotenv": "4.3.*",
         "symfony/flex": "^1.3.1",
         "symfony/framework-bundle": "4.3.*",
@@ -66,5 +68,17 @@
         }
     },
     "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:danielsan80/jobboy-bundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:danielsan80/jobboy-processes-redis.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:danielsan80/jobboy-processes-doctrine.git"
+        }
     ]
 }
