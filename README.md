@@ -39,7 +39,7 @@ Obviously the `jobboy:work` command should be added to Cron or Supervisord. An e
 * * * * * /usr/bin/php /var/www/project/bin/console jobboy:work --timeout=300 --idle-time=30 --env=prod
 ```  
 
-You can execute the process in a one command too waiting the end of the process (just for debug purpose):
+You can execute the process in a command too waiting the end of the process (just for debug purpose):
 ```
 sf jobboy:process:execute --code create_data_file --parameters=data/create_data_file/parameters.json 
 ```
@@ -59,10 +59,16 @@ sf jobboy:process:list
 sf jobboy:process:list --active 
 ```
 
-...and you can show the details of one 
+...and you can show the details of one... 
 ```
 sf jobboy:process:list --show b793c
 ```
+
+...or the details of the first one
+```
+sf jobboy:process:list --show-first
+```
+
 
 That's all.
 
