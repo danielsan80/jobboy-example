@@ -9,6 +9,7 @@ job_boy:
 
 #  process_class: JobBoy\Process\Domain\Entity\Infrastructure\TouchCallback\HydratableProcess
 
+#
 #  redis:
 #    host: '%env(resolve:JOBBOY_REDIS_HOST)%'
 #    port: '%env(resolve:JOBBOY_REDIS_PORT)%'
