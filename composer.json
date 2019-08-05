@@ -18,9 +18,9 @@
         "symfony/yaml": "4.3.*"
     },
     "require-dev": {
-        "dansan/fixture-handler": "^0.1",
-        "mockery/mockery": "dev-master",
-        "symfony/phpunit-bridge": "^4.3"
+        "dansan/jobboy-test-pack":"*",
+        "dansan/fixture-handler": "^0.1"
+
     },
     "config": {
         "preferred-install": {

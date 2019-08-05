@@ -8,6 +8,9 @@
     "dansan/jobboy-processes-redis": {
         "version": "0.1.x-dev"
     },
+    "dansan/jobboy-test-pack": {
+        "version": "0.0.1"
+    },
     "nesbot/carbon": {
         "version": "2.22.0"
     },
