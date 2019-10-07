@@ -1,12 +1,12 @@
 <?php
 
-namespace App\JobBoy\CreateDataFile;
+namespace JobBoyExample\Jobs\CreateDataFile;
 
-use App\JobBoy\WorkingDir\WorkingDirInterface;
 use JobBoy\Process\Domain\Entity\Id\ProcessId;
 use JobBoy\Process\Domain\ProcessHandler\IterationResponse;
 use JobBoy\Process\Domain\ProcessHandler\ProcessHandlers\Base\AbstractUnhandledProcessHandler;
 use JobBoy\Process\Domain\Repository\ProcessRepositoryInterface;
+use JobBoyExample\WorkingDir\WorkingDirInterface;
 
 class Initialize extends AbstractUnhandledProcessHandler
 {

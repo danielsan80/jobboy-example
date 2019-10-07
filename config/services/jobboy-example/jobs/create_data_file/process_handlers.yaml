@@ -4,29 +4,29 @@ services:
     autowire: true      # Automatically injects dependencies in your services.
     autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
 
-  App\JobBoy\CreateDataFile\Initialize:
-    class: App\JobBoy\CreateDataFile\Initialize
+  JobBoyExample\Jobs\CreateDataFile\Initialize:
+    class: JobBoyExample\Jobs\CreateDataFile\Initialize
     arguments:
       $workingDir: "@jobboy.create_data_file.working_dir"
     lazy: true
     tags:
       - name: jobboy.process_handler
 
-  App\JobBoy\CreateDataFile\Iterate:
-    class: App\JobBoy\CreateDataFile\Iterate
+  JobBoyExample\Jobs\CreateDataFile\Iterate:
+    class: JobBoyExample\Jobs\CreateDataFile\Iterate
     lazy: true
     tags:
       - name: jobboy.process_handler
 
 
-  App\JobBoy\CreateDataFile\Finalize:
-    class: App\JobBoy\CreateDataFile\Finalize
+  JobBoyExample\Jobs\CreateDataFile\Finalize:
+    class: JobBoyExample\Jobs\CreateDataFile\Finalize
     lazy: true
     tags:
       - name: jobboy.process_handler
 
-  App\JobBoy\CreateDataFile\Fail:
-    class: App\JobBoy\CreateDataFile\Fail
+  JobBoyExample\Jobs\CreateDataFile\Fail:
+    class: JobBoyExample\Jobs\CreateDataFile\Fail
     lazy: true
     tags:
       - name: jobboy.process_handler

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\JobBoy\WorkingDir;
+namespace JobBoyExample\WorkingDir;
 
 abstract class AbstractWorkingDir implements WorkingDirInterface
 {

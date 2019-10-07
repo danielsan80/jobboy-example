@@ -4,8 +4,8 @@ services:
     autowire: true      # Automatically injects dependencies in your services.
     autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
 
-  App\JobBoy\Common\FreeHandled:
-    class: App\JobBoy\Common\FreeHandled
+  JobBoyExample\Jobs\Common\FreeHandled:
+    class: JobBoyExample\Jobs\Common\FreeHandled
     lazy: true
     tags:
       - name: jobboy.process_handler

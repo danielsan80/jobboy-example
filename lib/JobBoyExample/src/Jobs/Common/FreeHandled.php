@@ -1,6 +1,6 @@
 <?php
 
-namespace App\JobBoy\Common;
+namespace JobBoyExample\Jobs\Common;
 
 use JobBoy\Process\Domain\Entity\Id\ProcessId;
 use JobBoy\Process\Domain\ProcessHandler\IterationResponse;

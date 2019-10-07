@@ -1,6 +1,6 @@
 <?php
 
-namespace App\JobBoy\CreateDataFile;
+namespace JobBoyExample\Jobs\CreateDataFile;
 
 use JobBoy\Process\Domain\Entity\Id\ProcessId;
 use JobBoy\Process\Domain\ProcessHandler\IterationResponse;

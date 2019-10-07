@@ -1,10 +1,9 @@
 <?php
 
-namespace Tests\App\JobBoy\WorkingDir;
+namespace Tests\JobBoyExample\WorkingDir;
 
+use JobBoyExample\WorkingDir\TmpWorkingDir;
 use PHPUnit\Framework\TestCase;
-
-use App\JobBoy\WorkingDir\TmpWorkingDir;
 
 class TmpWorkingDirTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\JobBoy\WorkingDir;
+namespace JobBoyExample\WorkingDir;
 
 class WorkingDir extends AbstractWorkingDir
 {

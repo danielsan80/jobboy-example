@@ -1,5 +1,5 @@
 <?php
-namespace App\JobBoy\WorkingDir;
+namespace JobBoyExample\WorkingDir;
 
 
 interface WorkingDirInterface
