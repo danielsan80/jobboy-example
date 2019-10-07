@@ -11,3 +11,11 @@ services:
       - name: jobboy.process_handler
         priority: 110
 
+
+  JobBoy\Process\Domain\ProcessHandler\ProcessHandlers\Common\Dummy:
+    class: JobBoy\Process\Domain\ProcessHandler\ProcessHandlers\Common\Dummy
+    lazy: true
+    tags:
+      - name: jobboy.process_handler
+        priority: 120
+

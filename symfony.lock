@@ -1,4 +1,10 @@
 {
+    "dansan/fixture-handler": {
+        "version": "0.1.1"
+    },
+    "dansan/jobboy": {
+        "version": "0.2.4"
+    },
     "dansan/jobboy-bundle": {
         "version": "0.1.x-dev"
     },
