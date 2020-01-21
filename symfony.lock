@@ -20,6 +20,9 @@
     "nesbot/carbon": {
         "version": "2.22.0"
     },
+    "php": {
+        "version": "7.2"
+    },
     "symfony/dotenv": {
         "version": "v4.3.3"
     },
