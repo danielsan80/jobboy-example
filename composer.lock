@@ -70,16 +70,16 @@
         },
         {
             "name": "dansan/jobboy",
-            "version": "0.2.9",
+            "version": "0.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielsan80/jobboy.git",
-                "reference": "fd30430314a30d3b7f6d66613b3d471f17ef5174"
+                "reference": "2c720936bf66644011cf346249c3fe9cbb4f5a8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielsan80/jobboy/zipball/fd30430314a30d3b7f6d66613b3d471f17ef5174",
-                "reference": "fd30430314a30d3b7f6d66613b3d471f17ef5174",
+                "url": "https://api.github.com/repos/danielsan80/jobboy/zipball/2c720936bf66644011cf346249c3fe9cbb4f5a8f",
+                "reference": "2c720936bf66644011cf346249c3fe9cbb4f5a8f",
                 "shasum": ""
             },
             "require": {
@@ -118,7 +118,7 @@
                 }
             ],
             "description": "It's a little jobman... a little job manager",
-            "time": "2020-01-24T14:54:09+00:00"
+            "time": "2020-02-06T18:29:49+00:00"
         },
         {
             "name": "dansan/jobboy-bundle",
