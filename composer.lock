@@ -70,16 +70,16 @@
         },
         {
             "name": "dansan/jobboy",
-            "version": "0.2.10",
+            "version": "0.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielsan80/jobboy.git",
-                "reference": "2c720936bf66644011cf346249c3fe9cbb4f5a8f"
+                "reference": "3c95a7b9af15557e4df14de345b2d76de204abf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielsan80/jobboy/zipball/2c720936bf66644011cf346249c3fe9cbb4f5a8f",
-                "reference": "2c720936bf66644011cf346249c3fe9cbb4f5a8f",
+                "url": "https://api.github.com/repos/danielsan80/jobboy/zipball/3c95a7b9af15557e4df14de345b2d76de204abf6",
+                "reference": "3c95a7b9af15557e4df14de345b2d76de204abf6",
                 "shasum": ""
             },
             "require": {
@@ -118,20 +118,20 @@
                 }
             ],
             "description": "It's a little jobman... a little job manager",
-            "time": "2020-02-06T18:29:49+00:00"
+            "time": "2020-02-07T12:11:42+00:00"
         },
         {
             "name": "dansan/jobboy-bundle",
-            "version": "0.2.8",
+            "version": "0.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielsan80/jobboy-bundle.git",
-                "reference": "f0927752416517c1bb0caefe463d35e59b9ef2e6"
+                "reference": "4c5a4fa60cdb48df211c1f2336537ed8bcf56bb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielsan80/jobboy-bundle/zipball/f0927752416517c1bb0caefe463d35e59b9ef2e6",
-                "reference": "f0927752416517c1bb0caefe463d35e59b9ef2e6",
+                "url": "https://api.github.com/repos/danielsan80/jobboy-bundle/zipball/4c5a4fa60cdb48df211c1f2336537ed8bcf56bb4",
+                "reference": "4c5a4fa60cdb48df211c1f2336537ed8bcf56bb4",
                 "shasum": ""
             },
             "require": {
@@ -165,7 +165,7 @@
                 }
             ],
             "description": "Symfony bundle for dansan/jobboy",
-            "time": "2020-01-24T15:19:27+00:00"
+            "time": "2020-02-07T12:19:38+00:00"
         },
         {
             "name": "dansan/jobboy-processes-doctrine",
