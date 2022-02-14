@@ -257,16 +257,16 @@
         },
         {
             "name": "dansan/jobboy-processes-doctrine",
-            "version": "0.3.1",
+            "version": "0.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielsan80/jobboy-processes-doctrine.git",
-                "reference": "bf70901848ed139caea06ce17640bdb60a3be8da"
+                "reference": "457596e280a53f387d7e96c3dc7b0412f1ace2bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielsan80/jobboy-processes-doctrine/zipball/bf70901848ed139caea06ce17640bdb60a3be8da",
-                "reference": "bf70901848ed139caea06ce17640bdb60a3be8da",
+                "url": "https://api.github.com/repos/danielsan80/jobboy-processes-doctrine/zipball/457596e280a53f387d7e96c3dc7b0412f1ace2bc",
+                "reference": "457596e280a53f387d7e96c3dc7b0412f1ace2bc",
                 "shasum": ""
             },
             "require": {
@@ -305,9 +305,9 @@
             "description": "Doctrine ProcessRepository for dansan/jobboy",
             "support": {
                 "issues": "https://github.com/danielsan80/jobboy-processes-doctrine/issues",
-                "source": "https://github.com/danielsan80/jobboy-processes-doctrine/tree/master"
+                "source": "https://github.com/danielsan80/jobboy-processes-doctrine/tree/0.3.5"
             },
-            "time": "2020-03-10T15:04:59+00:00"
+            "time": "2022-02-14T17:51:39+00:00"
         },
         {
             "name": "dansan/jobboy-processes-redis",
