@@ -6,7 +6,7 @@
         "ext-json": "*",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "dansan/jobboy-bundle": "^0.3",
+        "dansan/jobboy-bundle": "dev-feature/api@dev",
         "dansan/jobboy-processes-redis": "^0.3",
         "dansan/jobboy-processes-doctrine": "^0.3",
         "dansan/jobboy": "^0.3",
@@ -20,7 +20,10 @@
         "doctrine/common": "^2",
         "doctrine/doctrine-bundle": "^2",
         "doctrine/doctrine-migrations-bundle": "^2",
-        "symfony/yaml": "4.3.*"
+        "symfony/yaml": "4.3.*",
+        "symfony/twig-bundle": "4.3.*",
+        "twig/extra-bundle": "^2.12|^3.0",
+        "twig/twig": "^2.12|^3.0"
     },
     "require-dev": {
         "dansan/jobboy-test-pack":"*",
