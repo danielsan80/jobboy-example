@@ -21,6 +21,7 @@
         "doctrine/doctrine-bundle": "^2",
         "doctrine/doctrine-migrations-bundle": "^2",
         "symfony/yaml": "4.3.*",
+        "symfony/security-bundle": "4.3.*",
         "symfony/twig-bundle": "4.3.*",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0"

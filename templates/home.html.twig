@@ -3,4 +3,5 @@
 
 {% block body %}
 <a href="{{ url('jobboy_api_process_list') }}">Jobboy</a>
+    {{ is_granted('ROLE_JOBBOY')?'Si':'No' }}
 {% endblock %}

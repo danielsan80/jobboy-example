@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1aa289f74049b5951b96a6240857e799",
+    "content-hash": "b3ded815e3b6e4f8a15fe94a37d44f7a",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -205,16 +205,16 @@
         },
         {
             "name": "dansan/jobboy-api",
-            "version": "0.0.2",
+            "version": "0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielsan80/jobboy-api.git",
-                "reference": "8b563d24d39651abe3f952d4347dc9d0812f443f"
+                "reference": "d65ddd39a0a2476f9206f4de96b81c11ed8cfec5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielsan80/jobboy-api/zipball/8b563d24d39651abe3f952d4347dc9d0812f443f",
-                "reference": "8b563d24d39651abe3f952d4347dc9d0812f443f",
+                "url": "https://api.github.com/repos/danielsan80/jobboy-api/zipball/d65ddd39a0a2476f9206f4de96b81c11ed8cfec5",
+                "reference": "d65ddd39a0a2476f9206f4de96b81c11ed8cfec5",
                 "shasum": ""
             },
             "require": {
@@ -253,9 +253,9 @@
             "description": "It's the api integration for a Sf app using JobBoy",
             "support": {
                 "issues": "https://github.com/danielsan80/jobboy-api/issues",
-                "source": "https://github.com/danielsan80/jobboy-api/tree/0.0.2"
+                "source": "https://github.com/danielsan80/jobboy-api/tree/0.0.5"
             },
-            "time": "2022-02-15T12:20:28+00:00"
+            "time": "2022-02-15T14:43:26+00:00"
         },
         {
             "name": "dansan/jobboy-bundle",
@@ -263,12 +263,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielsan80/jobboy-bundle.git",
-                "reference": "a80a6e961cdacf9f1a4b547ffbd4836ce6e53b0c"
+                "reference": "44b0f6d1c3d4a198d281369638af0f9d99256f0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielsan80/jobboy-bundle/zipball/a80a6e961cdacf9f1a4b547ffbd4836ce6e53b0c",
-                "reference": "a80a6e961cdacf9f1a4b547ffbd4836ce6e53b0c",
+                "url": "https://api.github.com/repos/danielsan80/jobboy-bundle/zipball/44b0f6d1c3d4a198d281369638af0f9d99256f0f",
+                "reference": "44b0f6d1c3d4a198d281369638af0f9d99256f0f",
                 "shasum": ""
             },
             "require": {
@@ -307,7 +307,7 @@
                 "issues": "https://github.com/danielsan80/jobboy-bundle/issues",
                 "source": "https://github.com/danielsan80/jobboy-bundle/tree/feature/api"
             },
-            "time": "2022-02-15T12:05:00+00:00"
+            "time": "2022-02-15T14:38:29+00:00"
         },
         {
             "name": "dansan/jobboy-processes-doctrine",
@@ -3442,6 +3442,68 @@
             "time": "2020-01-31T12:38:38+00:00"
         },
         {
+            "name": "symfony/inflector",
+            "version": "v4.3.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/inflector.git",
+                "reference": "8c699257379098d26fa400edad29f703b380efcf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/inflector/zipball/8c699257379098d26fa400edad29f703b380efcf",
+                "reference": "8c699257379098d26fa400edad29f703b380efcf",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Inflector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Inflector Component",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "inflection",
+                "pluralize",
+                "singularize",
+                "string",
+                "symfony",
+                "words"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/inflector/tree/v4.3.11"
+            },
+            "abandoned": "EnglishInflector from the String component",
+            "time": "2020-01-04T12:24:57+00:00"
+        },
+        {
             "name": "symfony/lock",
             "version": "v4.3.11",
             "source": {
@@ -3979,6 +4041,76 @@
             "time": "2021-06-05T21:20:04+00:00"
         },
         {
+            "name": "symfony/property-access",
+            "version": "v4.3.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/property-access.git",
+                "reference": "28ecead27bd17937b3f904396b026a8e3915d0cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/property-access/zipball/28ecead27bd17937b3f904396b026a8e3915d0cd",
+                "reference": "28ecead27bd17937b3f904396b026a8e3915d0cd",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/inflector": "~3.4|~4.0"
+            },
+            "require-dev": {
+                "symfony/cache": "~3.4|~4.0"
+            },
+            "suggest": {
+                "psr/cache-implementation": "To cache access methods."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\PropertyAccess\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony PropertyAccess Component",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "access",
+                "array",
+                "extraction",
+                "index",
+                "injection",
+                "object",
+                "property",
+                "property path",
+                "reflection"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/property-access/tree/v4.3.11"
+            },
+            "time": "2020-01-04T12:24:57+00:00"
+        },
+        {
             "name": "symfony/routing",
             "version": "v4.3.11",
             "source": {
@@ -4056,6 +4188,355 @@
                 "source": "https://github.com/symfony/routing/tree/v4.3.11"
             },
             "time": "2020-01-08T14:00:15+00:00"
+        },
+        {
+            "name": "symfony/security-bundle",
+            "version": "v4.3.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/security-bundle.git",
+                "reference": "1cc02bd8e44eef0bd4ecfd53a8b4d7b26f675d85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/1cc02bd8e44eef0bd4ecfd53a8b4d7b26f675d85",
+                "reference": "1cc02bd8e44eef0bd4ecfd53a8b4d7b26f675d85",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xml": "*",
+                "php": "^7.1.3",
+                "symfony/config": "^4.2",
+                "symfony/dependency-injection": "^4.2",
+                "symfony/http-kernel": "^4.3",
+                "symfony/security-core": "~4.3",
+                "symfony/security-csrf": "~4.2",
+                "symfony/security-guard": "~4.2",
+                "symfony/security-http": "~4.3.10|^4.4.3"
+            },
+            "conflict": {
+                "symfony/browser-kit": "<4.2",
+                "symfony/console": "<3.4",
+                "symfony/framework-bundle": "<4.3.4",
+                "symfony/twig-bundle": "<4.2",
+                "symfony/var-dumper": "<3.4"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "~1.5",
+                "symfony/asset": "~3.4|~4.0",
+                "symfony/browser-kit": "~4.2",
+                "symfony/console": "~3.4|~4.0",
+                "symfony/css-selector": "~3.4|~4.0",
+                "symfony/dom-crawler": "~3.4|~4.0",
+                "symfony/expression-language": "~3.4|~4.0",
+                "symfony/form": "~3.4|~4.0",
+                "symfony/framework-bundle": "^4.3.4",
+                "symfony/http-foundation": "~3.4|~4.0",
+                "symfony/process": "~3.4|~4.0",
+                "symfony/translation": "~3.4|~4.0",
+                "symfony/twig-bridge": "~3.4|~4.0",
+                "symfony/twig-bundle": "~4.2",
+                "symfony/validator": "~3.4|~4.0",
+                "symfony/var-dumper": "~3.4|~4.0",
+                "symfony/yaml": "~3.4|~4.0",
+                "twig/twig": "~1.41|~2.10"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bundle\\SecurityBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony SecurityBundle",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/security-bundle/tree/v4.3.10"
+            },
+            "time": "2020-01-08T17:19:22+00:00"
+        },
+        {
+            "name": "symfony/security-core",
+            "version": "v4.3.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/security-core.git",
+                "reference": "8d008438e4bbdf04086d1048d51cc1b5dfac2046"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/security-core/zipball/8d008438e4bbdf04086d1048d51cc1b5dfac2046",
+                "reference": "8d008438e4bbdf04086d1048d51cc1b5dfac2046",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/event-dispatcher-contracts": "^1.1",
+                "symfony/service-contracts": "^1.1"
+            },
+            "conflict": {
+                "symfony/event-dispatcher": "<4.3",
+                "symfony/security-guard": "<4.3"
+            },
+            "require-dev": {
+                "psr/container": "^1.0",
+                "psr/log": "~1.0",
+                "symfony/event-dispatcher": "^4.3",
+                "symfony/expression-language": "~3.4|~4.0",
+                "symfony/http-foundation": "~3.4|~4.0",
+                "symfony/ldap": "~3.4|~4.0",
+                "symfony/validator": "^3.4.31|^4.3.4"
+            },
+            "suggest": {
+                "psr/container-implementation": "To instantiate the Security class",
+                "symfony/event-dispatcher": "",
+                "symfony/expression-language": "For using the expression voter",
+                "symfony/http-foundation": "",
+                "symfony/ldap": "For using LDAP integration",
+                "symfony/validator": "For using the user password constraint"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Security\\Core\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Security Component - Core Library",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/security-core/tree/v4.3.11"
+            },
+            "time": "2020-01-31T09:10:37+00:00"
+        },
+        {
+            "name": "symfony/security-csrf",
+            "version": "v4.3.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/security-csrf.git",
+                "reference": "9e435026ab45f073880d1fbe0e1b17e7df6bf642"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/security-csrf/zipball/9e435026ab45f073880d1fbe0e1b17e7df6bf642",
+                "reference": "9e435026ab45f073880d1fbe0e1b17e7df6bf642",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/security-core": "~3.4|~4.0"
+            },
+            "conflict": {
+                "symfony/http-foundation": "<3.4"
+            },
+            "require-dev": {
+                "symfony/http-foundation": "~3.4|~4.0"
+            },
+            "suggest": {
+                "symfony/http-foundation": "For using the class SessionTokenStorage."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Security\\Csrf\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Security Component - CSRF Library",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/security-csrf/tree/v4.3.10"
+            },
+            "time": "2020-01-04T12:24:57+00:00"
+        },
+        {
+            "name": "symfony/security-guard",
+            "version": "v4.3.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/security-guard.git",
+                "reference": "5d87ee4ffa5aa6e594008fa3cc65bc8f86ad6438"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/security-guard/zipball/5d87ee4ffa5aa6e594008fa3cc65bc8f86ad6438",
+                "reference": "5d87ee4ffa5aa6e594008fa3cc65bc8f86ad6438",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/security-core": "~3.4.22|^4.2.3",
+                "symfony/security-http": "^4.3"
+            },
+            "require-dev": {
+                "psr/log": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Security\\Guard\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Security Component - Guard",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/security-guard/tree/v4.3.10"
+            },
+            "time": "2020-01-04T18:57:41+00:00"
+        },
+        {
+            "name": "symfony/security-http",
+            "version": "v4.3.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/security-http.git",
+                "reference": "2b4b8632956c680400006376fad0a4f9889d4be1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/security-http/zipball/2b4b8632956c680400006376fad0a4f9889d4be1",
+                "reference": "2b4b8632956c680400006376fad0a4f9889d4be1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/http-foundation": "~3.4|~4.0",
+                "symfony/http-kernel": "^4.3",
+                "symfony/property-access": "~3.4|~4.0",
+                "symfony/security-core": "^4.3"
+            },
+            "conflict": {
+                "symfony/security-csrf": "<3.4.11|~4.0,<4.0.11"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/routing": "~3.4|~4.0",
+                "symfony/security-csrf": "^3.4.11|^4.0.11"
+            },
+            "suggest": {
+                "symfony/routing": "For using the HttpUtils class to create sub-requests, redirect the user, and match URLs",
+                "symfony/security-csrf": "For using tokens to protect authentication/logout attempts"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Security\\Http\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Security Component - HTTP Integration",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/security-http/tree/4.3"
+            },
+            "time": "2020-01-31T09:10:37+00:00"
         },
         {
             "name": "symfony/service-contracts",
