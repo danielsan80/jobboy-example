@@ -6,7 +6,7 @@
         "ext-json": "*",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "dansan/jobboy-bundle": "dev-feature/api@dev",
+        "dansan/jobboy-bundle": "^0.3",
         "dansan/jobboy-processes-redis": "^0.3",
         "dansan/jobboy-processes-doctrine": "^0.3",
         "dansan/jobboy": "^0.3",

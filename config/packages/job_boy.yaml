@@ -14,5 +14,5 @@ job_boy:
 #    host: '%env(resolve:JOBBOY_REDIS_HOST)%'
 #    port: '%env(resolve:JOBBOY_REDIS_PORT)%'
 
-  api:
-    required_role: IS_AUTHENTICATED_ANONYMOUSLY
+#  api:
+#    required_role: IS_AUTHENTICATED_ANONYMOUSLY
