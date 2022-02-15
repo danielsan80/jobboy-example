@@ -8,6 +8,9 @@
     "dansan/jobboy": {
         "version": "0.2.4"
     },
+    "dansan/jobboy-api": {
+        "version": "0.0.0"
+    },
     "dansan/jobboy-bundle": {
         "version": "0.1.x-dev"
     },
