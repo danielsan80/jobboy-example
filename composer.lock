@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3ded815e3b6e4f8a15fe94a37d44f7a",
+    "content-hash": "3950c33c2e8fdea55ef12ce65cd239a9",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -259,16 +259,16 @@
         },
         {
             "name": "dansan/jobboy-bundle",
-            "version": "dev-feature/api",
+            "version": "0.3.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielsan80/jobboy-bundle.git",
-                "reference": "44b0f6d1c3d4a198d281369638af0f9d99256f0f"
+                "reference": "452f8e8cc857871768ca4d535ea60ef1264a1303"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielsan80/jobboy-bundle/zipball/44b0f6d1c3d4a198d281369638af0f9d99256f0f",
-                "reference": "44b0f6d1c3d4a198d281369638af0f9d99256f0f",
+                "url": "https://api.github.com/repos/danielsan80/jobboy-bundle/zipball/452f8e8cc857871768ca4d535ea60ef1264a1303",
+                "reference": "452f8e8cc857871768ca4d535ea60ef1264a1303",
                 "shasum": ""
             },
             "require": {
@@ -305,9 +305,9 @@
             "description": "Symfony bundle for dansan/jobboy",
             "support": {
                 "issues": "https://github.com/danielsan80/jobboy-bundle/issues",
-                "source": "https://github.com/danielsan80/jobboy-bundle/tree/feature/api"
+                "source": "https://github.com/danielsan80/jobboy-bundle/tree/0.3.21"
             },
-            "time": "2022-02-15T14:38:29+00:00"
+            "time": "2022-02-15T16:25:49+00:00"
         },
         {
             "name": "dansan/jobboy-processes-doctrine",
@@ -7703,9 +7703,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "dansan/jobboy-bundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
