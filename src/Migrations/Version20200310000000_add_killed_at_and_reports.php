@@ -2,7 +2,7 @@
 
 namespace DoctrineMigrations;
 
-use JobBoy\Process\Domain\Repository\Infrastructure\Doctrine\Migrations\Version20200201000000_add_killed_at_and_reports as BaseVersion;
+use JobBoy\Process\Domain\Entity\Infrastructure\Doctrine\Migrations\Version20200310000000_add_killed_at_and_reports as BaseVersion;
 
 /**
  * Doctrine DBAL Migration of JobBoy ProcessRepository (for Symfony)
@@ -21,6 +21,6 @@ use JobBoy\Process\Domain\Repository\Infrastructure\Doctrine\Migrations\Version2
  *
  * @author Andreas Gustafsson <arrgson@gmail.com>
  */
-final class Version20200201000000_add_killed_at_and_reports extends BaseVersion
+final class Version20200310000000_add_killed_at_and_reports extends BaseVersion
 {
 }

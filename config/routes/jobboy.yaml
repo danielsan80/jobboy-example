@@ -1,0 +1,5 @@
+jobboy:
+  resource: .
+  type: jobboy
+  prefix: /jobboy/api
+

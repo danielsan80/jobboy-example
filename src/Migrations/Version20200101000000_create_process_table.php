@@ -2,7 +2,7 @@
 
 namespace DoctrineMigrations;
 
-use JobBoy\Process\Domain\Repository\Infrastructure\Doctrine\Migrations\Version20200101000000_create_process_table as BaseVersion;
+use JobBoy\Process\Domain\Entity\Infrastructure\Doctrine\Migrations\Version20200101000000_create_process_table as BaseVersion;
 
 /**
  * Doctrine DBAL Migration of JobBoy ProcessRepository (for Symfony)

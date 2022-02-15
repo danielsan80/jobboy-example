@@ -4,6 +4,7 @@ volumes:
   composer_volume: {}
   history_volume: {}
   redis_volume: {}
+  log_volume: {}
   db_volume: {}
 
 services:
@@ -17,6 +18,18 @@ services:
       - ./:/var/www/project
       - composer_volume:/home/user/.composer
       - history_volume:/home/user/history
+
+  web:
+    image: nginx:latest
+    ports:
+      - '${LOCALHOST}:80:80'
+    depends_on:
+      - php
+    volumes:
+      - ./:/var/www/project
+      - ./docker/nginx/symfony-4.conf:/etc/nginx/conf.d/default.conf
+      - log_volume:/var/log/nginx
+      #- ./docker/nginx/nginx.conf:/etc/nginx/s.conf
 
   db:
     image: mysql:5.7
