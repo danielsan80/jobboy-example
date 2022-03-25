@@ -205,16 +205,16 @@
         },
         {
             "name": "dansan/jobboy-api",
-            "version": "0.0.5",
+            "version": "0.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielsan80/jobboy-api.git",
-                "reference": "d65ddd39a0a2476f9206f4de96b81c11ed8cfec5"
+                "reference": "b6c4b2c7a1c82be552892f42a9c2f06059d66d25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielsan80/jobboy-api/zipball/d65ddd39a0a2476f9206f4de96b81c11ed8cfec5",
-                "reference": "d65ddd39a0a2476f9206f4de96b81c11ed8cfec5",
+                "url": "https://api.github.com/repos/danielsan80/jobboy-api/zipball/b6c4b2c7a1c82be552892f42a9c2f06059d66d25",
+                "reference": "b6c4b2c7a1c82be552892f42a9c2f06059d66d25",
                 "shasum": ""
             },
             "require": {
@@ -253,9 +253,9 @@
             "description": "It's the api integration for a Sf app using JobBoy",
             "support": {
                 "issues": "https://github.com/danielsan80/jobboy-api/issues",
-                "source": "https://github.com/danielsan80/jobboy-api/tree/0.0.5"
+                "source": "https://github.com/danielsan80/jobboy-api/tree/0.0.14"
             },
-            "time": "2022-02-15T14:43:26+00:00"
+            "time": "2022-02-16T18:47:21+00:00"
         },
         {
             "name": "dansan/jobboy-bundle",
@@ -3098,16 +3098,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.18.4",
+            "version": "v1.18.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "910a5c5ac35b58c9faddc992f56ad7a931d1e064"
+                "reference": "10e438f53a972439675dc720706f0cd5c0ed94f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/910a5c5ac35b58c9faddc992f56ad7a931d1e064",
-                "reference": "910a5c5ac35b58c9faddc992f56ad7a931d1e064",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/10e438f53a972439675dc720706f0cd5c0ed94f1",
+                "reference": "10e438f53a972439675dc720706f0cd5c0ed94f1",
                 "shasum": ""
             },
             "require": {
@@ -3143,7 +3143,7 @@
             "description": "Composer plugin for Symfony",
             "support": {
                 "issues": "https://github.com/symfony/flex/issues",
-                "source": "https://github.com/symfony/flex/tree/v1.18.4"
+                "source": "https://github.com/symfony/flex/tree/v1.18.5"
             },
             "funding": [
                 {
@@ -3159,7 +3159,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-15T08:56:54+00:00"
+            "time": "2022-02-16T17:26:46+00:00"
         },
         {
             "name": "symfony/framework-bundle",
