@@ -17,11 +17,11 @@
     "dansan/jobboy-bundle": {
         "version": "0.1.x-dev"
     },
-    "dansan/jobboy-processes-doctrine": {
-        "version": "0.1.x-dev"
+    "dansan/jobboy-driver-doctrine": {
+        "version": "0.0.1"
     },
-    "dansan/jobboy-processes-redis": {
-        "version": "0.1.x-dev"
+    "dansan/jobboy-driver-redis": {
+        "version": "0.0.1"
     },
     "dansan/jobboy-test-pack": {
         "version": "0.0.3"
