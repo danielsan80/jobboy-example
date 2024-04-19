@@ -23,11 +23,16 @@
         "symfony/yaml": "4.3.*",
         "symfony/security-bundle": "4.3.*",
         "symfony/twig-bundle": "4.3.*",
-        "twig/extra-bundle": "^2.12|^3.0",
-        "twig/twig": "^2.12|^3.0"
+        "twig/extra-bundle": "^2.12||^3.0",
+        "twig/twig": "^2.12||^3.0"
     },
     "require-dev": {
-        "dansan/jobboy-test-pack":"*",
+        "symfony/dotenv": "^4.2",
+        "mockery/mockery": "*",
+        "nesbot/carbon": "^2.0",
+        "symfony/browser-kit": "4.3.*",
+        "symfony/css-selector": "4.3.*",
+        "symfony/phpunit-bridge": "^6.0",
         "dansan/fixture-handler": "^0.1"
 
     },
