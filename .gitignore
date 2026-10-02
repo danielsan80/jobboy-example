@@ -6,6 +6,9 @@
 /.env.*.local
 /public/bundles/
 
+/.phpunit.result.cache
+/.phpunit.cache
+
 /.tmp
 /.build
 
